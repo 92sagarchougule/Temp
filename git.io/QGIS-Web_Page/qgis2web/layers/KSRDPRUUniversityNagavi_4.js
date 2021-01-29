@@ -1,0 +1,1 @@
+var json_KSRDPRUUniversityNagavi_4 = {"type":"FeatureCollection","name":"KSRDPRUUniversityNagavi_4","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":null,"Name_":"KSRDPRU University, Nagavi"},"geometry":{"type":"Point","coordinates":[75.605869235313932,15.368651282677178]}}]}

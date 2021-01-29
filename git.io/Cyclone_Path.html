@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_83e5a7eee4594b9885214ea5fc47f6f7 {
+                    position: relative;
+                    width: 90.0%;
+                    height: 90.0%;
+                    left: 5.0%;
+                    top: 2.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>    
+</body>
+        <a class="navbar-brand" href="https://ksrdpru.ac.in/"><img src="./Main Page/logo.png" alt="ksrdpru" width="60" height="60"></a>
+        <h4 style="text-align: center; color:rgb(24, 168, 32);"> <a href="index.html" >M.Sc. Geoinformatics Programme</a></h4>
+        <div style="text-align: center; color:rgb(22, 219, 48);">
+        <h4 > Sample Cyclone Path Map for Study Purpose</h4>
+        </div> 
+            <div class="folium-map" id="map_83e5a7eee4594b9885214ea5fc47f6f7" ></div>
+        
+
+<script>    
+    
+            var map_83e5a7eee4594b9885214ea5fc47f6f7 = L.map(
+                "map_83e5a7eee4594b9885214ea5fc47f6f7",
+                {
+                    center: [22.349603, 77.601532],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_23f6c59bedaa4ad4869df2e6e387c414 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_83e5a7eee4594b9885214ea5fc47f6f7);
+        
+    
+            ant_path_0c72f57a08074e678d342ce634bdb2b0 = L.polyline.antPath(
+              [[9.602765, 84.390717], [9.843893, 83.42744], [10.458746, 81.845649], [11.044679, 80.736829], [11.572306, 80.144748], [11.572306, 80.144748], [11.939652, 79.823484], [12.424724, 79.662345], [13.471205, 79.206566], [14.366294, 78.725776], [15.573338, 79.020849], [17.607425, 80.741265], [18.934734, 83.224304], [19.890503, 87.46266]],
+              {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_83e5a7eee4594b9885214ea5fc47f6f7);
+        
+</script>

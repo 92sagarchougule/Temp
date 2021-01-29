@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0726007ed934dfc94a857ecfaa3ff84 {
+                    position: absolute;
+                    width: 45.0%;
+                    height: 90%;
+                    left: 6.5%;
+                    top: 9.8%;
+                }
+            </style>
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_51acb846a7aa4f8ba31641d354fad0cf {
+                    position: absolute;
+                    width: 45.0%;
+                    height: 90.0%;
+                    left: 51.60%;
+                    top: 9.8%;
+                }
+            </style>
+        
+    <script src="https://rawcdn.githack.com/jieter/Leaflet.Sync/master/L.Map.Sync.js"></script>
+</head>
+<body>   
+    <a class="navbar-brand" href="https://ksrdpru.ac.in/"><img src="./Main Page/logo.png" alt="ksrdpru" width="60" height="60"></a>
+    <h4 style="text-align: center; color:rgb(24, 168, 32);"> <a href="index.html" >M.Sc. Geoinformatics Programme</a></h4>
+    <div style="text-align: center; color:rgb(22, 219, 48);">
+    <h4 > This Dual Map help to Identify the Location of KSRDPR University & Programmes</h4>
+    </div> 
+    
+            <div class="folium-map" id="map_a0726007ed934dfc94a857ecfaa3ff84" ></div>
+        
+    
+            <div class="folium-map" id="map_51acb846a7aa4f8ba31641d354fad0cf" ></div>
+        
+</body>
+
+<script>    
+    
+            var map_a0726007ed934dfc94a857ecfaa3ff84 = L.map(
+                "map_a0726007ed934dfc94a857ecfaa3ff84",
+                {
+                    center: [15.424066806519576, 75.63662856817245],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_33deb008f98948e1b25b4d9a94024d56 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a0726007ed934dfc94a857ecfaa3ff84);
+        
+    
+            var feature_group_392c8ca4a5f545d3a91f6354db4853bb = L.featureGroup(
+                {}
+            ).addTo(map_a0726007ed934dfc94a857ecfaa3ff84);
+        
+    
+            var marker_79a26075ce0e44dda85a51560213e1be = L.marker(
+                [15.424066806519576, 75.63662856817245],
+                {}
+            ).addTo(feature_group_392c8ca4a5f545d3a91f6354db4853bb);
+        
+    
+            var icon_a383fd04d3874100a61569494ec608a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79a26075ce0e44dda85a51560213e1be.setIcon(icon_a383fd04d3874100a61569494ec608a9);
+        
+    
+            marker_79a26075ce0e44dda85a51560213e1be.bindTooltip(
+                `<div>
+                     Main KSRDPR University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_f2eb2595ef0347089e628153e3ac05bb = L.featureGroup(
+                {}
+            ).addTo(map_a0726007ed934dfc94a857ecfaa3ff84);
+        
+    
+            var marker_e36b073e4a3442739abf094a1b884ab4 = L.marker(
+                [15.42647787008756, 75.60847342014313],
+                {}
+            ).addTo(feature_group_f2eb2595ef0347089e628153e3ac05bb);
+        
+    
+            marker_e36b073e4a3442739abf094a1b884ab4.bindTooltip(
+                `<div>
+                     Training Center - 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_cf49790616114adfb430fd06719e56b0 = L.featureGroup(
+                {}
+            ).addTo(map_a0726007ed934dfc94a857ecfaa3ff84);
+        
+    
+            var marker_806221704c92480986ddbc38ef8e7110 = L.marker(
+                [15.422701602081291, 75.60665488243103],
+                {}
+            ).addTo(feature_group_cf49790616114adfb430fd06719e56b0);
+        
+    
+            marker_806221704c92480986ddbc38ef8e7110.bindTooltip(
+                `<div>
+                     Training Center - 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_59b5a0e452174689b4229b9216e246e6 = L.featureGroup(
+                {}
+            ).addTo(map_a0726007ed934dfc94a857ecfaa3ff84);
+        
+    
+            var marker_45d7e87f8bd9494aa2e2a09ac442c49c = L.marker(
+                [15.368624023613165, 75.60590922832489],
+                {}
+            ).addTo(feature_group_59b5a0e452174689b4229b9216e246e6);
+        
+    
+            marker_45d7e87f8bd9494aa2e2a09ac442c49c.bindTooltip(
+                `<div>
+                     New Campus of KSRDPR University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_47df14719eb342a0b448f117f2b464c6 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_33deb008f98948e1b25b4d9a94024d56,
+                },
+                overlays :  {
+                    "Main Building" : feature_group_392c8ca4a5f545d3a91f6354db4853bb,
+                    "Training Center - 1" : feature_group_f2eb2595ef0347089e628153e3ac05bb,
+                    "Training Center - 2" : feature_group_cf49790616114adfb430fd06719e56b0,
+                    "New Campus of KSRDPR University" : feature_group_59b5a0e452174689b4229b9216e246e6,
+                },
+            };
+            L.control.layers(
+                layer_control_47df14719eb342a0b448f117f2b464c6.base_layers,
+                layer_control_47df14719eb342a0b448f117f2b464c6.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_a0726007ed934dfc94a857ecfaa3ff84);
+        
+    
+            var map_51acb846a7aa4f8ba31641d354fad0cf = L.map(
+                "map_51acb846a7aa4f8ba31641d354fad0cf",
+                {
+                    center: [15.424066806519576, 75.63662856817245],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e161543391a54e70a9092a42786fcedd = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_51acb846a7aa4f8ba31641d354fad0cf);
+        
+    
+            map_a0726007ed934dfc94a857ecfaa3ff84.sync(map_51acb846a7aa4f8ba31641d354fad0cf);
+            map_51acb846a7aa4f8ba31641d354fad0cf.sync(map_a0726007ed934dfc94a857ecfaa3ff84);
+        
+    
+            var tile_layer_c5ce79d0123647f1b10c370431945c65 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_51acb846a7aa4f8ba31641d354fad0cf);
+        
+    
+            var feature_group_fe5ce10fced74671951ec97c2e3ac1d3 = L.featureGroup(
+                {}
+            ).addTo(map_51acb846a7aa4f8ba31641d354fad0cf);
+        
+    
+            var marker_f4be4400e17d471ba50a0718acd7f0be = L.marker(
+                [15.424066806519576, 75.63662856817245],
+                {}
+            ).addTo(feature_group_fe5ce10fced74671951ec97c2e3ac1d3);
+        
+    
+            var icon_61354acb334b44618e896decd004b094 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4be4400e17d471ba50a0718acd7f0be.setIcon(icon_61354acb334b44618e896decd004b094);
+        
+    
+            marker_f4be4400e17d471ba50a0718acd7f0be.bindTooltip(
+                `<div>
+                     Main KSRDPR University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_b8e7b74931bf49328145020d3e004a52 = L.featureGroup(
+                {}
+            ).addTo(map_51acb846a7aa4f8ba31641d354fad0cf);
+        
+    
+            var marker_06898dffdd41495f84391ef1afadf63d = L.marker(
+                [15.42647787008756, 75.60847342014313],
+                {}
+            ).addTo(feature_group_b8e7b74931bf49328145020d3e004a52);
+        
+    
+            marker_06898dffdd41495f84391ef1afadf63d.bindTooltip(
+                `<div>
+                     Training Center - 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_2cf75d9abf8f4037a7354427f3e93746 = L.featureGroup(
+                {}
+            ).addTo(map_51acb846a7aa4f8ba31641d354fad0cf);
+        
+    
+            var marker_1bf7954c02de470ba673955ee09e850d = L.marker(
+                [15.422701602081291, 75.60665488243103],
+                {}
+            ).addTo(feature_group_2cf75d9abf8f4037a7354427f3e93746);
+        
+    
+            marker_1bf7954c02de470ba673955ee09e850d.bindTooltip(
+                `<div>
+                     Training Center - 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_0814ea2846af490d9e45b1edc05390d0 = L.featureGroup(
+                {}
+            ).addTo(map_51acb846a7aa4f8ba31641d354fad0cf);
+        
+    
+            var marker_566c8cebe4344241a38c33698a21f1ee = L.marker(
+                [15.368624023613165, 75.60590922832489],
+                {}
+            ).addTo(feature_group_0814ea2846af490d9e45b1edc05390d0);
+        
+    
+            marker_566c8cebe4344241a38c33698a21f1ee.bindTooltip(
+                `<div>
+                     New Campus of KSRDPR University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_389fd276879946f0b4bd3015dc67cf3d = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_e161543391a54e70a9092a42786fcedd,
+                    "openstreetmap" : tile_layer_c5ce79d0123647f1b10c370431945c65,
+                },
+                overlays :  {
+                    "New Campus of KSRDPR University" : feature_group_0814ea2846af490d9e45b1edc05390d0,
+                    "Training Center - 2" : feature_group_2cf75d9abf8f4037a7354427f3e93746,
+                    "Training Center - 1" : feature_group_b8e7b74931bf49328145020d3e004a52,
+                    "Main Building" : feature_group_fe5ce10fced74671951ec97c2e3ac1d3,
+                },
+            };
+            L.control.layers(
+                layer_control_389fd276879946f0b4bd3015dc67cf3d.base_layers,
+                layer_control_389fd276879946f0b4bd3015dc67cf3d.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_51acb846a7aa4f8ba31641d354fad0cf);
+            tile_layer_c5ce79d0123647f1b10c370431945c65.remove();
+            tile_layer_e161543391a54e70a9092a42786fcedd.remove();
+        
+</script>

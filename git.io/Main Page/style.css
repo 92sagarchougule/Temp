@@ -1,0 +1,80 @@
+
+#myCarousel .item{
+  height:500px;
+}
+
+
+/* Map Height and width*/
+.map{
+    width:100%;
+    height:600px;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.bs-example{
+  margin: 5px;
+  color: blue;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;                      
+  font-family: Garamond;
+}
+
+.dropdown-item{
+  font-size: 17px;
+  color: rgb(50, 189, 22);
+  font-family: Garamond;
+}
+
+  
+
+/* Home Page color */
+/* Drop Down  */
+/* Containt Images*/
+/* Color Coding for Social Media Symbols*/
+
+ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+
+  right: 20%;
+  bottom: 0%;
+  top:0%;
+  left:20;
+  width: 100%; 
+  height:80%;
+}
+
+
+
+#myBtn {
+  width: 70px;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+ 

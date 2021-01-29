@@ -1,0 +1,1 @@
+var json_TrainingCenter1_3 = {"type":"FeatureCollection","name":"TrainingCenter1_3","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":null,"Name_":"Training Center - 1"},"geometry":{"type":"Point","coordinates":[75.608417856414931,15.426698046663041]}}]}
